@@ -18,9 +18,11 @@
         const map = new maplibregl.Map({
             container: 'map',
             style:
-                'https://api.maptiler.com/maps/positron/style.json?key=get_your_own_OpIi9ZULNHzrESv6T2vL',
-            center: [0, 0],
-            zoom: 1
+                'https://geoserveis.icgc.cat/contextmaps/icgc_delimitacio_limits_administratius.json',
+            center: [1.572, 41.712],
+            zoom: 7.5,
+            minZoom: 7.5,
+            hash: true
         });
 
         map.on('load', async () => {
